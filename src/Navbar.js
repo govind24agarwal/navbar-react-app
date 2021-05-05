@@ -25,7 +25,10 @@ function Navbar() {
           <AiFillCloud />
           cloud services
         </button>
-        <button onClick={() => setShowLinks((oldState) => !oldState)}>
+        <button
+          className="nav-toggle"
+          onClick={() => setShowLinks((oldState) => !oldState)}
+        >
           <FaBars />
         </button>
       </div>

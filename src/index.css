@@ -31,11 +31,12 @@ button {
 
 nav {
   padding: 1rem;
+  min-height: 8vh;
   height: auto;
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   box-shadow: 2px 2px 2px 2px rgba(66, 59, 59, 0.25);
 }
@@ -75,4 +76,25 @@ nav {
 a {
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (min-width: 900px) {
+  nav {
+    height: 8vh;
+    flex-direction: row;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: 8vh !important;
+  }
+  .links {
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-around;
+  }
+  .header {
+    width: 20vw;
+  }
 }
