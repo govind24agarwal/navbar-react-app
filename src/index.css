@@ -72,7 +72,16 @@ nav {
   list-style: none;
   text-transform: uppercase;
   padding: 0.25rem;
+  display: flex;
 }
+
+.links li:hover {
+  transition: all 0.1s linear;
+}
+a:hover {
+  color: rgb(119, 78, 128);
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -88,13 +97,24 @@ a {
   }
   .links-container {
     height: 8vh !important;
+    padding: 0.5rem;
   }
   .links {
     flex-direction: row;
-    padding: 0;
     justify-content: space-around;
+    align-items: center;
+  }
+  .links li {
+    text-align: center;
   }
   .header {
     width: 20vw;
+  }
+  a {
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .links li:hover {
+    transform: scale(1.1);
   }
 }
